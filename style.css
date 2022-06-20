@@ -1,0 +1,102 @@
+
+/*-----------------------NAV---------------------*/
+
+
+nav{background: linear-gradient(0deg, rgba(1,89,88,1) 0%, rgba(2,53,53,1) 65%);}
+
+.SearchBar input{width: 65%;
+    height: 42px;
+    background: #0CABA8;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    border-radius: 5px;}
+
+nav .list a{text-decoration: none;
+            color:white;
+            margin: 0px 10px;
+            font-weight: 400;
+            font-size: 25px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+            }
+
+/*-----------------------Gird Main---------------------*/
+
+.Main_Section_img{display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:     "Ofertas Notebook Notebook"
+                             "Ofertas Notebook Notebook"
+                             "Ofertas Horario atencion"
+                             ;
+    padding: 5% 8%; 
+    gap: 3%;}
+
+.Main_Section_img img{height: 100%;
+        width: 100%;}
+
+.Ofertas{grid-area: Ofertas;}
+
+.Notebook{grid-area: Notebook;}
+
+.Horario{grid-area: Horario;}
+
+.Attention{grid-area: Atencion;}
+
+/*-----------------------CARROUSEL ITEMS---------------------*/
+
+.Cards-Wrap{display: flex;
+    height: 500px;}
+
+
+.Cards-Wrap .card{background-color:rgb(186, 185, 185);
+    margin: 5px;
+    flex-direction: column;
+    text-align: center;}
+
+.card-body{align-items: center;
+    display: flex;
+    flex-direction: column;}
+
+.card-body .PrecioBtn{display: flex;}
+
+.card .btn{justify-self: center;
+    background: #023535;
+    width: 85%;
+    border-radius: 15px;}
+
+.card-body p{font-size: 20px;
+    line-height: 41px;}
+
+/*-----------------------FAQ---------------------*/
+
+.FAQ li{background-color: white;
+    border: 1px solid rgba(2,53,53,1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;}
+
+/*-----------------------MICUENTA---------------------*/
+
+.Micuenta button{width: 50%;
+    height: 60px;
+    background-color: rgba(1,89,88,1);}
+
+/*-----------------------MICUENTA---------------------*/
+
+.list input{width:80%;}
+
+.Register button{width: 50%;
+    height: 60px;
+    background-color: rgba(1,89,88,1);}
+
+/*-----------------------FOOTER---------------------*/
+
+footer .Info a{text-decoration: none;}
+
+footer i{color: rgba(1,89,88,1);}
+
+footer p{margin: 0;}
+
