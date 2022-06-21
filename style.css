@@ -62,7 +62,7 @@ nav .list a{text-decoration: none;
 
 .card-body .PrecioBtn{display: flex;}
 
-.card .btn{justify-self: center;
+.card .btns{justify-self: center;
     background: #023535;
     width: 85%;
     border-radius: 15px;}
@@ -72,11 +72,7 @@ nav .list a{text-decoration: none;
 
 /*-----------------------FAQ---------------------*/
 
-.FAQ li{background-color: white;
-    border: 1px solid rgba(2,53,53,1);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10px 20px 10px;}
+
 
 /*-----------------------MICUENTA---------------------*/
 
