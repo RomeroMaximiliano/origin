@@ -56,16 +56,6 @@ nav .list a{text-decoration: none;
     flex-direction: column;
     text-align: center;}
 
-.card-body{align-items: center;
-    display: flex;
-    flex-direction: column;}
-
-.card-body .PrecioBtn{display: flex;}
-
-.card .btn{justify-self: center;
-    background: #023535;
-    width: 85%;
-    border-radius: 15px;}
 
 .card-body p{font-size: 20px;
     line-height: 41px;}
