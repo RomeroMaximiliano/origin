@@ -47,8 +47,7 @@ nav .list a{text-decoration: none;
 
 /*-----------------------CARROUSEL ITEMS---------------------*/
 
-.Cards-Wrap{display: flex;
-    height: 500px;}
+.Cards-Wrap{display: flex;}
 
 
 .Cards-Wrap .card{background-color:rgb(186, 185, 185);
