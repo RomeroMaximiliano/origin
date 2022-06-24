@@ -130,6 +130,22 @@ nav img{width: 65px;}
     margin-top: 20px;}
         
 .Quienes_Somos .Banner img{height: 170px;}
+
+@media screen and (max-width: 1200px){
+    .Nosotros{flex-direction: column;
+        align-items: center;}
+        
+    .Nosotros p{width: 100%;
+        margin-bottom: 20px;}
+    
+    .ComoTrabajamos{flex-direction: column;
+        align-items: center;}
+        
+    .ComoTrabajamos p{width: 100%;
+    order: 1;}
+    
+    .ComoTrabajamos IMG{order: 2;
+        margin-top: 20px;}
     
 
 /*-----------------------FOOTER---------------------*/
