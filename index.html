@@ -9,35 +9,48 @@
     <title>PcGamer</title>
 </head>
 <body>
-    <nav class="container-fluid">
-        <div class="row align-items-center" style="height: 75px;">
-            <div class="col-3">
-                <a href="./Index.HTML" ><img style="width: 60px;" src="./IMG/Pc.ico" alt="Logo"></a>
-            </div>
-            <div class="col-6 SearchBar d-flex justify-content-center">
-                <input type="search" placeholder="Buscar">
-            </div>
-            <div class="col-3 d-flex justify-content-end">
-                <a style="text-decoration: none; color:white;" href="./pages/myaccount.html"><i class="fa-solid fa-user "></i>Mi Cuenta</a>
-                <a class="mx-3" style="text-decoration: none; color:white;" href=""><i class="fa-solid fa-cart-shopping "></i>Carrito</a>
-            </div>
-        </div>
-        <div class="row align-items-center" style="height: 65px;">
-            <div class="col-3 dropdown">           
-                <svg style="color:white;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
-                <p class="d-inline "style="color: white; font-size: 20px;">Por Categorias</p>
-                </div>
-            <div class="col-6 list">
-                <ul class="d-flex justify-content-center p-0 " style="list-style-type:none; ">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Arma tu PC</a></li>
-                    <li><a href="#">Arma tu Combo</a></li>
-                    <li><a href="./pages/faq.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="col"></div>
-        </div>
-    </nav>
+  
+  <nav class="container-fluid">
+    <div class="Navreponsive d-flex justify-content-between align-items-center d-md-none">
+      <div class="nav_responsive--logo">
+        <a href="./Index.HTML"><img src="./IMG/Pc.ico" alt="Logo"></a>
+      </div>
+      <div class="input_responsive">
+        <input type="search" placeholder="Buscar">
+        <i class="fa fa-search btn " aria-hidden="true"></i>
+      </div>
+      <div class="nav_redirects">
+          <a href="./pages/myaccount.html"><i class="fa-solid fa-user fa-2x"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+      </div>
+    </div>
+
+    <div class="row align-items-center d-none d-md-flex" style="height: 75px;">
+      <div class="col-2">
+          <a href="../Index.HTML" ><img style="width: 60px;" src="../IMG/Pc.ico" alt="Logo"></a>
+      </div>
+      <div class="col-8 SearchBar d-flex justify-content-center">
+          <input type="search" placeholder="Buscar">
+      </div>
+      <div class="redirects col-2 d-flex justify-content-end ">
+          <a style="text-decoration: none; color:white;" href="myaccount.html"><i class="fa-solid fa-user "></i><span class="d-none d-xl-inline">Mi Cuenta</span></a>
+          <a class="mx-3" style="text-decoration: none; color:white;" href=""><i class="fa-solid fa-cart-shopping "></i><span class="d-none d-xl-inline">Carrito</span></a>
+      </div>
+  </div>
+
+  <div class="row align-items-center d-none d-md-flex" style="height: 65px;">
+      <div class="col-2 dropdown position-relative">           
+          <svg style="color:white;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+          <p class="d-none d-xl-inline m-0"style="color: white; font-size: 20px;">Por Categorias</p>
+          </div>
+      <div class="col-8 list">
+          <ul class="d-flex justify-content-center p-0 mt-3 List" style="list-style-type:none; ">
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Arma tu PC</a></li>
+              <li><a href="#">Arma tu Combo</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+          </ul>
+  </nav>
 
 <main class="d-flex flex-column align-items-center" style="background-color: rgba(223,223,223,1);">
     <div class="main_Index container-fluid">
@@ -73,7 +86,7 @@
     </div>
 </div>
 
-<div id="carouselExampleControls" class="carousel carousel-dark slide mt-5" style="width:75%;" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide carousel-dark mt-5 d-none d-lg-inline" style="width:75%;" data-bs-ride="carousel">
     <h2>Mas Vendidos</h2>
     <div class="carousel-inner p-2" style="background: #D0D0D0; border-radius: 5px;">
       <div class="carousel-item active">
@@ -239,9 +252,17 @@
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
-<div id="carouselExampleControls" class="carousel slide mt-5 mb-5" style="width:75%;" data-bs-ride="carousel">
+<div id="Carrousel_Perifericos" class="carousel slide carousel-dark mt-5 mb-5 d-lg-inline" style="width:75%;" data-bs-ride="carousel">
     <h2>Mejores Perifericos</h2>
     <div class="carousel-inner p-2" style="background: #D0D0D0; border-radius: 5px;">
       <div class="carousel-item active">
@@ -413,12 +434,20 @@
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#Carrousel_Perifericos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#Carrousel_Perifericos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
 </main>
 
     <footer>
-        <div class="d-flex container-fluid justify-content-between p-4 pt-5 position-relative" style="background-color: rgba(217,217,217,1);">
-        <div class="d-flex flex-column Info">
+        <div class=" flex-md-row justify-content-md-between text-md-start position-relative text-center d-flex flex-column ">
+        <div class="Cont_Footer d-flex flex-column">
             <h6>INFORMACION</h6>
             <a href="index.html">Inicio</a>
             <a href="./pages/whoiam.html">¿Quienes somos?</a>
@@ -426,25 +455,26 @@
             <a href="./pages/pp.html"">Politicas de privacidad</a>
             <a href="#">Boton de arrepentimiento</a>
         </div>
-        <div class="">
+        <div class="Cont_Footer">
             <h6>CONTACTO</h6>
             <p>Telefono: 0110 - 1100</p>
             <p>Whatsapp: 11 0110 - 1100</p>
             <p>Email: ventas@contacto.com.ar</p>
             <p>rma.contacto@hotmail.com.ar</p>  
-            <p>Horario de atencion <br> Lunes a viernes:08:00 a 20:30hs
-            <br>Sabado y domingo: 10:00 a 19:00hs</p>
+            <p>Horario de atencion  Lunes a viernes:08:00 a 20:30hs
+            <p>y domingo: 10:00 a 19:00hs</p>
         </div>
-        <div class="d-flex flex-column align-items-center">
+        <div class="Cont_Footer Cont_Footer--I">
             <h6>NUESTRAS REDES</h6>
-            <div class="Redes_i">
-            <i class="fa-brands fa-instagram fa-3x"></i><br>
-            <i class="fa-brands fa-facebook fa-3x mt-3 mb-3"></i><br>
-            <i class="fa-brands fa-twitter fa-3x"></i></div>
+            <div class="d-flex flex-column mb-3 align-items-center">
+            <i class="fa-brands fa-instagram fa-3x"></i>
+            <i class="fa-brands fa-facebook fa-3x mt-3 mb-3"></i>
+            <i class="fa-brands fa-twitter fa-3x"></i>
+          </div>
         </div>
-        <div class="position-absolute bottom-0"><p class=" Copy" style="color: white;">&copy; Maximiliano Romero 2022 - Todos los derechos reservados - Hosting Web</p></div>
+        
         </div>
-
+            <p style="color: white;">&copy; Maximiliano Romero 2022 - Todos los derechos reservados - Hosting Web</p>
     </footer>
     
     <script src="https://kit.fontawesome.com/ea6d8211f0.js" crossorigin="anonymous"></script>
