@@ -86,17 +86,23 @@ nav img{width: 65px;}
     flex-direction: column;
     text-align: center;}
 
+.card-body{align-items: center;
+    display: flex;
+    flex-direction: column;}
+
+.card-body .PrecioBtn{display: flex;}
+
+.card .btns{justify-self: center;
+    background: #023535;
+    width: 85%;
+    border-radius: 15px;}
 
 .card-body p{font-size: 20px;
     line-height: 41px;}
 
 /*-----------------------FAQ---------------------*/
 
-.FAQ li{background-color: white;
-    border: 1px solid rgba(2,53,53,1);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10px 20px 10px;}
+
 
 /*-----------------------MICUENTA---------------------*/
 
