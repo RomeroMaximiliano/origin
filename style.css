@@ -146,11 +146,12 @@ nav img{width: 65px;}
     
     .ComoTrabajamos IMG{order: 2;
         margin-top: 20px;}
+    }
     
 
 /*-----------------------FOOTER---------------------*/
 
-footer{background-color: rgb(186, 185, 185);}
+footer{background-color: rgba(217,217,217,1);}
 
 footer i{color: rgba(1,89,88,1);}
 
@@ -167,5 +168,3 @@ footer p{margin: 0;
 @media screen and (min-width:768px) {
     .Cont_Footer {border-bottom: none;
     padding: 50px;}}
-
-

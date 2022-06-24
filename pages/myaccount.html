@@ -9,36 +9,48 @@
     <title>PcGamer</title>
 </head>
 <body>
-    <nav class="container-fluid">
-        <div class="row align-items-center" style="height: 75px;">
-            <div class="col-2">
-                <a href="../Index.HTML" ><img style="width: 60px;" src="../IMG/Pc.ico" alt="Logo"></a>
-            </div>
-            <div class="col-8 SearchBar d-flex justify-content-center">
-                <input type="search" placeholder="Buscar">
-            </div>
-            <div class="col-2 d-flex justify-content-end">
-                <a style="text-decoration: none; color:white;" href="myaccount.html"><i class="fa-solid fa-user "></i>Mi Cuenta</a>
-                <a class="mx-3" style="text-decoration: none; color:white;" href=""><i class="fa-solid fa-cart-shopping "></i>Carrito</a>
-            </div>
-        </div>
 
-        <div class="row align-items-center" style="height: 65px;">
-            <div class="col-2 dropdown">           
-                <svg style="color:white;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
-                <p class="d-inline "style="color: white; font-size: 20px;">Por Categorias</p>
-                </div>
-            <div class="col-8 list">
-                <ul class="d-flex justify-content-center p-0 " style="list-style-type:none; ">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Arma tu PC</a></li>
-                    <li><a href="#">Arma tu Combo</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="col"></div>
+<nav class="container-fluid">
+    <div class="Navreponsive d-flex justify-content-between align-items-center d-md-none">
+        <div class="nav_responsive--logo">
+            <a href="../index.html"><img src="../IMG/Pc.ico" alt="Logo"></a>
         </div>
-    </nav>
+        <div class="input_responsive">
+            <input type="search" placeholder="Buscar">
+            <i class="fa fa-search btn " aria-hidden="true"></i>
+        </div>
+        <div class="nav_redirects">
+            <a href="/pages/myaccount.html"><i class="fa-solid fa-user fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+        </div>
+    </div>
+
+    <div class="row align-items-center d-none d-md-flex" style="height: 75px;">
+        <div class="col-2">
+            <a href="../index.html" ><img style="width: 60px;" src="../IMG/Pc.ico" alt="Logo"></a>
+        </div>
+        <div class="col-8 SearchBar d-flex justify-content-center">
+            <input type="search" placeholder="Buscar">
+        </div>
+        <div class="redirects col-2 d-flex justify-content-end ">
+            <a style="text-decoration: none; color:white;" href="./myaccount.html"><i class="fa-solid fa-user "></i><span class="d-none d-xl-inline">Mi Cuenta</span></a>
+            <a class="mx-3" style="text-decoration: none; color:white;" href=""><i class="fa-solid fa-cart-shopping "></i><span class="d-none d-xl-inline">Carrito</span></a>
+        </div>
+    </div>
+
+    <div class="row align-items-center d-none d-md-flex" style="height: 65px;">
+        <div class="col-2 dropdown position-relative">           
+            <svg style="color:white;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+            <p class="d-none d-xl-inline m-0"style="color: white; font-size: 20px;">Por Categorias</p>
+        </div>
+        <div class="col-8 list">
+            <ul class="d-flex justify-content-center p-0 mt-3 List" style="list-style-type:none; ">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Arma tu PC</a></li>
+                <li><a href="#">Arma tu Combo</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+</nav>
 
 <main class="container-fluid p-5 d-flex Micuenta" style="background-color: rgba(223,223,223,1);">
         <form class="p-5"  Style="width: 1280px; height: 778px; box-shadow: -2px 3px 12px 9px rgba(0, 0, 0, 0.25);">
