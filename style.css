@@ -2,9 +2,26 @@
 /*-----------------------NAV---------------------*/
 
 
-nav{background: linear-gradient(0deg, rgba(1,89,88,1) 0%, rgba(2,53,53,1) 65%);}
+nav{
+    background: linear-gradient(0deg, rgba(1,89,88,1) 0%, rgba(2,53,53,1) 65%);
 
-nav img{width: 65px;}
+}
+
+nav img{
+    width: 60px;
+
+}
+
+.header{
+    height: 75px;
+
+}
+
+.nav{
+    height: 65px;
+
+}
+
 
 .input_responsive input{
     width: 0px;
@@ -14,9 +31,12 @@ nav img{width: 65px;}
     color: rgba(1,89,88,1);
     outline: none;
     border-radius: 30px;
-    transition: all 0.6s ease;}
+    transition: all 0.6s ease;
 
-.input_responsive .btn{position: relative;
+}
+
+.input_responsive .btn{
+    position: relative;
     right: 49px;
     bottom: 2px;
     width: 45px;
@@ -26,16 +46,34 @@ nav img{width: 65px;}
     background-color: rgba(1,89,88,1);
     color: white;
     border-radius: 50%;
-    padding: 0px;}
+    padding: 0px;
 
-.nav{display: none;}
+}
 
-.input_responsive:hover input{width: 240px;}
+.nav{
+    display: none;
 
-.nav_redirects i{margin-right: 20px;
-    color: white;}
+}
 
-.SearchBar input{width: 60%;
+.input_responsive:hover input{
+    width: 240px;
+
+}
+
+.nav_redirects i{
+    margin-right: 20px;
+    color: white;
+
+}
+
+.redirects a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.SearchBar input{
+    width: 60%;
     height: 42px;
     background: #0CABA8;
     color: white;
@@ -43,19 +81,40 @@ nav img{width: 65px;}
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    border-radius: 5px;}
+    border-radius: 5px;
 
-.List li{text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);}
+}
 
-.List a{text-decoration: none;
+.dropdown p{
+    color: white; 
+    font-size: 20px;
+
+}
+
+.List li{
+    list-style-type: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+
+}
+
+.List a{
+    text-decoration: none;
     font-weight: 400;
     font-size: 25px;
     color: white;
-    margin: 5px;}
+    margin: 5px;
+
+}
 
 /*-----------------------Gird Main---------------------*/
 
-.Main_Section_img{display: grid;
+main {
+    background-color: rgba(223,223,223,1);
+
+}
+
+.Main_Section_img{
+    display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto auto auto;
     grid-template-areas:     "Ofertas Notebook Notebook"
@@ -63,114 +122,231 @@ nav img{width: 65px;}
                              "Ofertas Horario atencion"
                              ;
     padding: 5% 8%; 
-    gap: 3%;}
+    gap: 3%;
+
+}
 
 .Main_Section_img img{height: 100%;
-        width: 100%;}
+        width: 100%;
+    
+}
 
-.Ofertas{grid-area: Ofertas;}
+.Ofertas{
+    grid-area: Ofertas;
 
-.Notebook{grid-area: Notebook;}
+}
 
-.Horario{grid-area: Horario;}
+.Notebook{
+    grid-area: Notebook;
 
-.Attention{grid-area: Atencion;}
+}
+
+.Horario{
+    grid-area: Horario;
+
+}
+
+.Attention{
+    grid-area: Atencion;
+
+}
 
 /*-----------------------CARROUSEL ITEMS---------------------*/
 
-.Cards-Wrap{display: flex;}
+.Carrousel_banner{
+    width: 80%;
+
+}
+
+.Carrousel_Deskop{
+    width: 75%;
+
+}
+
+.Carrousel_Mobile{
+    width: 62%;
+
+}
+
+.Carrousel_inner{
+    background: #D0D0D0;
+    border-radius: 5px;
+
+}
+
+.Cards-Wrap{
+    display: flex;
+
+}
 
 
-.Cards-Wrap .card{background-color:rgb(186, 185, 185);
+.Cards-Wrap .card{
+    background-color:rgb(186, 185, 185);
     margin: 5px;
     flex-direction: column;
-    text-align: center;}
+    text-align: center;
 
-.card-body{align-items: center;
+}
+
+.card-body{
+    align-items: center;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
 
-.card-body .PrecioBtn{display: flex;}
+}
+
+.card-body .PrecioBtn{
+    display: flex;
+
+}
 
 .card .btns{justify-self: center;
     background: #023535;
     width: 85%;
-    border-radius: 15px;}
+    border-radius: 15px;
 
-.card-body p{font-size: 20px;
-    line-height: 41px;}
+}
 
-/*-----------------------FAQ---------------------*/
+.card-body p{
+    font-size: 20px;
+    line-height: 41px;
 
+}
 
 
 /*-----------------------MICUENTA---------------------*/
 
-.Micuenta button{width: 50%;
+.Micuenta button{
+    width: 50%;
     height: 60px;
-    background-color: rgba(1,89,88,1);}
+    background-color: rgba(1,89,88,1);
+
+}
+
+.Cuenta a{
+    text-decoration: none;
+
+}
 
 /*-----------------------REGISTRARSE---------------------*/
 
+main form{
+    width: 1280px;
+    height: 950px;
+    box-shadow: -2px 3px 12px 9px rgba(0, 0, 0, 0.25);
+}
+
 .list input{width:80%;}
 
-.Register button{width: 50%;
+.Register button{
+    width: 50%;
     height: 60px;
-    background-color: rgba(1,89,88,1);}
+    background-color: rgba(1,89,88,1);
 
+}
+
+main ul{
+    list-style-type: none;
+
+}
+
+main ul i{
+    color: #023535;
+}
 
 /*-----------------------QUIENESSOMOS---------------------*/
 
-.Quienes_Somos .Banner img {height: 350px;}
+.Quienes_Somos .Banner img {
+    height: 350px;
+
+}
         
-.Nosotros p{width: 100%;
-    margin-bottom: 20px;}
-    
-.ComoTrabajamos{flex-direction: column;
-    align-items: center;}
-        
-.ComoTrabajamos p{width: 100%;
-    order: 1;}
-    
-.ComoTrabajamos img{order: 2;
-    margin-top: 20px;}
-        
-.Quienes_Somos .Banner img{height: 170px;}
+.Nosotros p{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.Nosotros img{width: 400px;
+    height: 400px;
+}
 
 @media screen and (max-width: 1200px){
-    .Nosotros{flex-direction: column;
-        align-items: center;}
-        
-    .Nosotros p{width: 100%;
-        margin-bottom: 20px;}
+    .Nosotros{
+        flex-direction: column;
+        align-items: center;
     
-    .ComoTrabajamos{flex-direction: column;
-        align-items: center;}
+    }
         
-    .ComoTrabajamos p{width: 100%;
+    .Nosotros p{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    
+    .ComoTrabajamos{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+        
+    .ComoTrabajamos p{
+        width: 100%;
     order: 1;}
     
-    .ComoTrabajamos IMG{order: 2;
-        margin-top: 20px;}
+    .ComoTrabajamos IMG{
+        order: 2;
+        margin-top: 20px;
+    
     }
+    
+}
     
 
 /*-----------------------FOOTER---------------------*/
 
-footer{background-color: rgba(217,217,217,1);}
+footer{
+    background-color: rgba(217,217,217,1);
 
-footer i{color: rgba(1,89,88,1);}
+}
 
-footer p{margin: 0;
-    padding: 2px;}
+footer i{
+    color: rgba(1,89,88,1);
 
-.Cont_Footer a{text-decoration: none;}
+}
 
-.Cont_Footer{border-bottom: 2px solid rgba(2,53,53,1);
-    padding: 10px 0px;}
+footer p{
+    margin: 0;
+    padding: 2px;
 
-.Cont_Footer--I{border-bottom: none;}
+}
+
+.Cont_Footer a{
+    text-decoration: none;
+
+}
+
+.Cont_Footer{
+    border-bottom: 2px solid rgba(2,53,53,1);
+    padding: 10px 0px;
+
+}
+
+.Cont_Footer--I{
+    border-bottom: none;
+
+}
+
+.Copy{
+    color: white;
+    bottom: 5px;
+}
 
 @media screen and (min-width:768px) {
-    .Cont_Footer {border-bottom: none;
-    padding: 50px;}}
+    .Cont_Footer {
+        border-bottom: none;
+    padding: 50px;
+
+    }
+
+}
